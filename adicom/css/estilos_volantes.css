@@ -1,0 +1,62 @@
+/*------------------------------- pagina volantes --------------------------------*/
+#pagVolantes {
+		font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+		font-size:12px !important;
+		/* color:#00C; */
+		font-weight:normal !important;
+		}
+.etiquetaPo{font-weight:normal !important;}
+.nomSis{ color:#F0F !important}
+/* h3{color:#F0F !important} */
+.pasosActivo{ display:inline-block; padding:5px 12px; height:25px;  cursor:pointer;line-height:25px; 
+	background:#FF80FF !important;
+	font-weight:bold;  color:#EEE;}
+#pagVolantes
+textarea:focus,
+textarea:hover,
+input[type="text"]:hover, 
+input[type="text"]:focus,
+select:hover,
+select:focus 
+{
+	border: 1px solid #F0F !important;
+}
+#pagVolantes #product-table	th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	/* background:#FF80FF; */
+	padding:10px 0;
+	color:#FFF
+	}
+#pagVolantes #product-table	th.trpo{ background:#069 !important}
+#pagVolantes #product-table	th.trpfrr{ background:#390 !important }
+#pagVolantes #product-table	th.trmedios{ background:#C60000 !important }
+#pagVolantes #product-table	th.trlegal{ background:#DF7401 !important }
+#pagVolantes #product-table	th.trbusca{ background:#FF80FF !important }
+/*
+#pagVolantes .submit-login{ background:#FF80FF !important}
+#pagVolantes #product-table tr:hover {  background:#FFD2FF !important; }
+*/
+/* #pagVolantes #product-table {table-layout: fixed !important} */
+/* .contVolantes{border: 2px solid #F0F !important;} */
+/* .pasos{ background:#F39 !important} */
+#pagVolantes
+textarea,
+input[type="text"], 
+select
+{
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-weight:normal !important;
+}
+.volanteDivCont{ border:1px dotted #666666; padding:5px; margin:5px; width:267px; height:165px !important}
+.volanteDivCont_RR{ border:1px dotted #666666; padding:5px; margin:5px; width:340px; height:165px !important}
+.volanteDivContRR{ border:1px dotted #666666; padding:5px; margin:5px; width:500px; }
+.volanteConRem{ border:1px dotted #666666; padding:5px; margin:5px; width:650px; height:320px; overflow:auto}
+.divRecurrente{ background:#FFF;border:1px solid #666666; padding:5px; margin:5px; width:400px; position:relative }
+.volDivAcci{ border:0px dotted #666666; padding:0; margin:0; width:1200px; height:180px !important}
+.eliminar-RR{ display:block; top:40px; right:10px; cursor:pointer; position:absolute; background:url(../images/cross.png); height:16px; width:16px; z-index:100; }
+
+
+
+
+

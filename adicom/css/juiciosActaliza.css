@@ -1,0 +1,175 @@
+body 
+{
+    font-family: Arial;
+    font-size: 0.8em;
+}
+
+
+
+.seguimientoJuicios {
+    margin-top: 40px;
+}
+
+
+
+.box_1 {
+    float: right;
+    width: 35%;
+    padding: 30px;
+    height: auto;
+}
+
+.box_2 {
+    float: left;
+    padding: 20px;
+    width: 45%;
+    background-color: #f1f1f1;
+    height: 780px; /* only for demonstration, should be removed */
+}
+
+
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.juicio-etiqueta { 
+    display:block; 
+    padding:3px; 
+    color:#069; 
+    font-weight: normal;
+    margin:1px; 
+    text-align:right
+}
+
+.juicio-redonda {
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.juicio-sinborde {
+    border: 0 !important;
+}
+
+
+
+fieldset { 
+    display: block;
+    color: #069;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px groove (internal value);
+    border-color: rgb(240, 244, 245);
+}
+
+section td { 
+    padding:3px;
+    color:rgb(27, 63, 4); 
+    margin:1px; 
+    font-weight: bold
+
+ }
+
+section.xx { 
+    display:block; 
+    padding:3px;
+    color:rgb(27, 63, 4); 
+    margin:1px; 
+    text-align:left;
+    font-weight: bold
+ }
+
+ #cuadroDialogoJuicios { 
+    position:fixed;
+    z-index:10;  
+    font-size:12px; 
+     display:none; 
+     padding:1px; 
+     background:#F5F5F5; 
+
+     top:5%; 
+     left:50%;
+     right:0;
+     margin-left: auto; 
+     margin-right: auto; 
+
+     -moz-border-radius:5p;
+     -webkit-border-radius: 5px; 
+     border-radius: 5px;
+    }
+
+
+ #cuadroTituloJuicio
+ { background:#333; 
+    padding:10px; 
+    color:#CCC; 
+    font-weight:bold; 
+    -moz-border-radius:5p;
+    -webkit-border-radius: 5px;
+     border-radius: 5px;
+    }
+
+#cuadroResJuicio
+{ line-height : normal; 
+    background:rgb(188, 238, 207); 
+    padding:5px; 
+    overflow : auto
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(241, 188, 223);
+    position: absolute;
+    top: 0;
+    /*bottom: 0; */
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #0f0101;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+
+  .navbar a.logo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  #success {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+}
