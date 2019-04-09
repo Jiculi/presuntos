@@ -19,7 +19,7 @@ function mostrarAltaVolante(pagina, titulo) {
 	//this.pagina = String(pagina);
 	alert("hola");
 	$('#cuadroRes').html('<center><img src="images/load_bar.gif" style="margin:100px 0"></center>');
-	//document.getElementById('cuadroTitulo').innerHTML = titulo;
+	document.getElementById('cuadroTitulo').innerHTML = titulo;
     $("#cuadroDialogo").css("height", "600px");
     $("#cuadroDialogo").css("width", "1000px");
     $("#cuadroDialogo").css("width", "1000px");

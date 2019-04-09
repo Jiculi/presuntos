@@ -28,7 +28,7 @@ body	{
 	background:#FFF;
 	color: #393939;
 	font-family: Arial;
-	font-size: 0px;
+	/* FLL font-size: 0px; */
 	}
 #page-top-outer	{
 	background: url(../images/shared/top_bg.jpg) top center repeat-x; 
@@ -1743,7 +1743,7 @@ border: 1px solid #253c55;
 /*----- cuadro de dialogo y fondo oscuro --*/
 #fondoOscuro{position:fixed;display:none;top:0px;bottom:0px;left:0px;right:0px;width:100%;background-color:#000000;	filter: alpha(opacity=70);opacity: .7;z-index:1150;}
 
-#cuadroDialogo{ font-size:12px; display:none; padding:1px; background:#F5F5F5; position:fixed; top:20%; left:50%;right:0;margin-left: auto; margin-right: auto; z-index:1200; -moz-border-radius:5p;-webkit-border-radius: 5px; border-radius: 5px;}
+#cuadroDialogo{ font-size:12px;  padding:1px; background:#F5F5F5; position:fixed; top:20%; left:50%;right:0;margin-left: auto; margin-right: auto; z-index:1200; -moz-border-radius:5p;-webkit-border-radius: 5px; border-radius: 5px;}
 /*
 #cuadroDialogo{	display:none;width: 100%;height:500px;position:fixed;top:50%;left:50%;	margin-left: -150px; margin-top: -250px;	z-index:1200; }
 */

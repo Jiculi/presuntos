@@ -4,20 +4,16 @@ header("Content-Type: text/html;charset=utf-8");
 error_reporting(E_ERROR);
 require_once("../includes/clases.php");
 require_once("../includes/funciones.php");
-
-
 ?>
-
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
 
 <script>
 
-$(function() {
+$$(function() {
 //--------------------------------------------------------------------------------------------------------------
 //----------------------------------------- REGISTRAR RECEPCION ------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------
-	$( "#f1_fecha_presc" ).datepicker({
+	$$( "#f1_fecha_presc" ).datepicker({
       //defaultDate: "+1w", //mas una semana
       numberOfMonths:1,	  //meses a mostrar
 	  showAnim:'slideDown',
@@ -31,8 +27,8 @@ $(function() {
       onClose: function( selectedDate ) 
 	  { 
 		//--- para sigiente fecha 
-	  	$( "#f2po_acuse_oficio" ).datepicker( "option", "minDate", selectedDate );  
-		//$( "#f2po_acuse_oficio" ).datepicker( "option", "maxDate", restaNolaborables(selectedDate,5)  ); 
+	  	$$( "#f2po_acuse_oficio" ).datepicker( "option", "minDate", selectedDate );  
+		//$$( "#f2po_acuse_oficio" ).datepicker( "option", "maxDate", restaNolaborables(selectedDate,5)  ); 
 	  }*/
     });
 });
@@ -45,21 +41,21 @@ function muestraCuadroMto()
 	form += "<center> <input type='text' name='nvoMonto' id='nvoMonto' class='redonda5' onchange='formatoMoneda(this)'> </center> <br>";
 	form += "<center> <input type='button' value='Actualizar' onclick='nvoMontoPFRR()' class='submit_line'> </center>";
 	
-	$("#cuadroRes2").html(form);
+	$$("#cuadroRes2").html(form);
 	
 }
 //----------------------------------------
 function nvoMontoPFRR()
 {
 	var accion = "<?php echo $_REQUEST['numAccion'] ?>";
-	var monto = $("#nvoMonto").val();
+	var monto = $$("#nvoMonto").val();
 	var confirma = confirm("Una vez cambiado este monto no se podra modificar nuevamente \n\n - Cantidad: "+monto+"  \n\n ¿Desea actualizar el monto?");
 	if(confirma)
 	{
-		$.ajax({
+		$$.ajax({
 			type: "POST",
 			url: "procesosAjax/pfrr_montoUAA.php",
-			//beforeSend: function(){ $('#cuadroRes2').html(" <center> <br><br> <b> <img src='images/load_grande.gif' /> Espere... <br><br> </b> </center> ") },
+			//beforeSend: function(){ $$('#cuadroRes2').html(" <center> <br><br> <b> <img src='images/load_grande.gif' /> Espere... <br><br> </b> </center> ") },
 			data: {
 					accion:accion,
 					monto:monto
@@ -82,10 +78,6 @@ $conexion->conectar();
 //------------------------------------------------------------------------------
 $accion = valorSeguro($_REQUEST['numAccion']);
 
-$sql1 = $conexion->select("SELECT po.fecha_del_pliego FROM po WHERE po.num_accion = '".$accion."'",false);
-
-$r1 = mysql_fetch_array($sql1);
-
 $sql = $conexion->select("SELECT 
 								pfrr.num_accion,
 								pfrr.superveniente,
@@ -95,7 +87,6 @@ $sql = $conexion->select("SELECT
 								pfrr.subdirector,
 								pfrr.abogado,
 								pfrr.po,
-								pfrr.fecha__po,
 								pfrr.num_DT,
 								pfrr.monto_no_solventado,
 								pfrr.monto_no_solventado_UAA,
@@ -156,8 +147,7 @@ $d = mysql_fetch_array($sql1);
 $coordinador = $d['nombre'];
 
 $abogresp = $_REQUEST['direccion'];
-
-if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { $fechapo = $r['fecha__po']; }
+	
 ?>
 
 <?php 
@@ -167,7 +157,7 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
 	<a href="#" title="Asignar Acción" class="" onclick=" new mostrarCuadro2(250,800,'Asignar Acción <?php echo $_REQUEST['numAccion'] ?>',100,'cont/pfrr_asigna_acciones.php','accion=<?php echo $_REQUEST['numAccion'] ?>&direccion=<?php echo $_REQUEST['direccion'] ?>&usuario=<?php echo $_REQUEST['usuario'] ?>&nivel=<?php echo $_REQUEST['nivel'] ?>') "> <img src="images/User-Files-iconAcc.png"> Reasignar Accion </a>
 <?php } ?>
 
-<link href="../css/estilos_pfrr.css" rel="stylesheet" type="text/css" />
+<link href="css/estilos_pfrr.css" rel="stylesheet" type="text/css" />
 <table align="center" class='tablaInfo' width="100%">
 
           <tr>
@@ -200,32 +190,14 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
                    
           <tr>
             <td><p class="etiquetaInfo redonda3">Procedimiento</p></td>
-            <td><p class="txtInfo">
-			<?php ///echo $r['num_procedimiento']; ?>
-			
-			<?php if ($r['num_procedimiento'] != "" || $r['num_procedimiento'] == "NULL" ) { 
-					echo      $r['num_procedimiento'];
-		} else { ?>
-                        <form name="fnoproc">
-            	 <input type="text" class="redonda5" id="no_proc" name="no_proc" value='<?php echo $r['num_procedimiento'] ?>' >
-				 <input type="hidden" id="edtramproc" name="edtramproc" value='<?php echo $r['detalle_edo_tramite'] ?>' >
-				 <input type="hidden" id="usproc" name="usproc" value='<?php echo $_REQUEST['usuario']; ?>' >
-			<?php if($r['direccion'] == $abogresp || $abogresp == "DG"){ ?>
-                 <input class="submit_line" type="button" name="Registrasic"  id="Registrasic" value="Guardar" onclick="guardanoproced()">
-			<?php } ?>
-                 <input type="hidden" name="accionproc" id="accionproc" value="<?php echo $accion; ?>">
-            </form>
-		<?php } ?>
-
-			
-			</p></td>
+            <td><p class="txtInfo"><?php echo $r['num_procedimiento']; ?></p></td>
             <td><p class="etiquetaInfo redonda3">Fondo</p></td>
             <td><p class="txtInfo"><?php echo $r['fondo']; ?></p></td>
           </tr>
           <tr>
             <td><p class="etiquetaInfo redonda3">DT</p></td>
             <td><p class="txtInfo">
-		<?php ///if ($_REQUEST['direccion'] == "DG" ) {  ?>
+		<?php if ($_REQUEST['direccion'] == "DG" ) {  ?>
                         <form name="fdt">
             	 <input type="text" class="redonda5" id="ndt" name="ndt" value='<?php echo urldecode($r['num_DT']) ?>' >
 				 <input type="hidden" id="edtramdt" name="edtramdt" value='<?php echo $r['detalle_edo_tramite'] ?>' >
@@ -235,7 +207,7 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
 		<?php } ?>
                  <input type="hidden" name="acciondt" id="acciondt" value="<?php echo $accion; ?>">
             </form>
-		<?php ///} ?>
+		<?php } ?>
 
 			
 			</p></td>
@@ -245,27 +217,7 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
             </tr>
           <tr>
             <td><p class="etiquetaInfo redonda3">PDR</p></td>
-            <td><p class="txtInfo">
-			<?php /// echo $r['pdr']; ?>
-			
-			<?php if ($r['pdr'] != "" && $abogresp != "DG") {
-					echo $r['pdr'];
-		} else { ?>
-                        <form name="nopdr">
-            	 <input class="redonda5" id="n_pdr" name="n_pdr" type="text" value='<?php echo $r['pdr'] ?>' >
-				 <input type="hidden" id="edtrampdr" name="edtrampdr" value='<?php echo $r['detalle_edo_tramite']; ?>' >
-				 <input type="hidden" id="uspdr" name="uspdr" value='<?php echo $_REQUEST['usuario']; ?>' >
-                                   
-		<?php if($r['direccion'] == $abogresp || $abogresp == "DG"){ ?>
-                 <input class="submit_line" type="button" name="Registrar"  id="Registrar" value="Guardar" onclick="guardapdr()">
-		<?php } ?>
-                                    
-
-                 <input type="hidden" name="num_accionpdr" id="num_accionpdr" value="<?php echo $accion; ?>">
-            </form>
-		<?php } ?>
-			
-			</p></td>
+            <td><p class="txtInfo"><?php echo $r['pdr']; ?></p></td>
             <td><p class="etiquetaInfo redonda3">Subdirector</p></td>
             <td> <p class="txtInfo"> Lic. <?php echo $subdirector ?></p></td>
              </tr>
@@ -277,7 +229,7 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
              </tr>
           <tr>
             <td><p class="etiquetaInfo redonda3">PO</p></td>
-            <td><p class="txtInfo"><?php echo $r['po']; ?> --- <?php echo fechaNormal($fechapo); ?></p></td>
+            <td><p class="txtInfo"><?php echo $r['po']; ?></p></td>
             <td><p class="etiquetaInfo redonda3">Jefe de depto.</p></td>
             <td><p class="txtInfo">Lic. 
               <?php echo $jefe; ?>
@@ -396,28 +348,9 @@ if($r1['fecha_del_pliego'] != "" ){$fechapo = $r1['fecha_del_pliego']; } else { 
 				//echo number_format(dameTotalPFRR($accion),2) 
 				//require_once('../procesosAjax/pfrr_reintegros_calcula.php'); 
 				//echo  number_format(dameTotalPO($accion),2);
-				//echo "$ "; echo  number_format($r['monto_no_solventado'],2);
+				echo "$ "; echo  number_format($r['monto_no_solventado'],2);
 			?>
-			</h2>
-
-			<h2><?php if ($r['monto_no_solventado'] != "") { echo "&nbsp;&nbsp;$";
-					echo number_format($r['monto_no_solventado'],2);
-		} else { ?></h2>
-                        <form name="nosolve">
-            	 <input class="redonda5" id="m_nosol" name="m_nosol" type="number" value='<?php echo number_format($r['monto_no_solventado'],2) ?>' >
-				 <input type="hidden" id="edtramdtns" name="edtramdtns" value='<?php echo $r['detalle_edo_tramite']; ?>' >
-				 <input type="hidden" id="usdtns" name="usdtns" value='<?php echo $_REQUEST['usuario']; ?>' >
-                                   <?php // if($r['detalle_edo_tramite'] < 17 or $r['detalle_edo_tramite'] == 30 and $r['inicio_frr'] == "" )  { ?>
-		<?php if($r['direccion'] == $abogresp || $abogresp == "DG"){ ?>
-                 <input class="submit_line" type="button" name="RegistrarM"  id="RegistrarM" value="Guardar" onclick="guardaMonto0()">
-		<?php } ?>
-                                    <?php //} ?>
-
-                 <input type="hidden" name="num_accion0" id="num_accion0" value="<?php echo $accion; ?>">
-            </form>
-		<?php } ?>
-
-			</p></td>
+			</h2></p></td>
             
       		<td><div class="etiquetaInfo redonda3"> Monto Inicio del PFRR  <p style="font-size:8px">IMPORTE DEL DAÑO </p></div></td> 
 			<td><p class="txtInfo">
