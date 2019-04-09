@@ -23,7 +23,7 @@
 
     <script>
         function informacion() {
-            var pagina = 'adicom/cont/pfrr_informacion.php?numAccion=03-00622-2-143-03-005&usuario=fllamas&direccion=DG&nivel=A';
+            var pagina = 'adicom/_pfrr_informacion.php?numAccion=03-00622-2-143-03-005&usuario=fllamas&direccion=DG&nivel=A';
 alert("antes");
             $("#cuadroRes").load(pagina);
             alert("despues");
@@ -51,7 +51,7 @@ alert("antes");
     <div id="fondoOscuro"></div>
 	<div id="cuadroDialogo" > cuadro de dialogo
 		<div id="cuadroTitulo"> </div>
-		<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro()" > <img src="images/cerrar.png" /> </div>
+		<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro()" > <img src="adicom/images/cerrar.png" /> </div>
 		<div id="cuadroRes">hola</div>
 		<div id="cuadroMen">que pasa</div>
 	</div>

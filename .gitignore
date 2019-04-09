@@ -1,2 +1,4 @@
 /node_modules
 .DS_Store
+/php/database.php
+/adicom/includes/clases.php

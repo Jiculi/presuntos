@@ -6,7 +6,7 @@ class conexion{
 		$this->host = 'localhost';
 		$this->db = 'dgr';
 		$this->user = 'root';
-		$this->pass = '';
+		$this->pass = 'root';
 	}
 	
 	function conectar()
