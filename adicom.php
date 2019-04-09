@@ -65,8 +65,12 @@
         
     </div>
 
-    <div id="Titulo"> </div>
-
+    <div id="Titulo">
+    </div>
+<div>
+    <p>que pasa</p>
+        <button id="juicios">vamos</button>
+    </div>
 
 
     <script type="text/javascript" src="adicom/js/funciones.js"></script>
