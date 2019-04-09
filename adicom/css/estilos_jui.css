@@ -1,0 +1,50 @@
+/*------------------------------- pagina empleados --------------------------------*/
+.nomSis{ color:#E12E2E !important}
+h3{color:#E12E2E !important}
+.pasosActivo{ 
+	display:inline-block; 
+	padding:5px 12px;
+	height:25px;  
+	cursor:pointer;
+	line-height:25px; 
+	background:#E12E2E !important;
+	font-weight:bold;  
+	color:#EEE;}
+textarea:focus,textarea:hover,input[type="text"]:hover, input[type="text"]:focus,select:hover,select:focus 
+{border: 1px solid #E12E2E !important;}
+/*#pagVolantes .submit-login{ background:#F0F !important}*/
+#product-table th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	background:#E12E2E !important;
+	padding:10px 0;
+	}
+#product-table th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	background:#E12E2E !important;
+	padding:10px 0;
+	}
+	
+#product-table tr:hover { background:#efc3ea !important; }
+.tablaInfo .etiquetaInfo {border: 1px solid #E12E2E !important; color:#E12E2E}
+/* .contVolantes{border: 2px solid #F0F !important;} */
+/* .pasos{ background:#F39 !important} */
+
+#related-act-top	{
+	/*background:url(../images/forms/header_related_act.gif);*/
+	background:#E12E2E !important;
+	width:260px;
+	height:43px;
+	margin:10px auto 0 auto;
+	-moz-border-radius: 8px 8px 0px 0px ;
+    -webkit-border-radius: 8px 8px 0px 0px ;
+    border-radius: 8px 8px 0px 0px ;
+	
+	}
+.pfAccesible{background:#E12E2E !important;}
+/*------------------------------- pagina oficios --------------------------------*/
+.camposAcciones{border:1px dotted #666666; padding:20px 50px; margin:10px; height:300px; overflow:auto}
+.camposLi{list-style:url(../images/OK20.png); margin:5px; position:relative }
+.camposInputAcciones{}
+.eliminarInput{ display:inline-block; cursor:pointer; position:relative; background:url(../images/cross.png); height:16px; width:16px; left:-25px; z-index:100}

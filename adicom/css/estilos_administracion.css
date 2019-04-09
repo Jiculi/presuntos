@@ -1,0 +1,28 @@
+/*------------------------------- pagina ADMINISTRACION -------------------------*/
+.nomSis{ color:#8B0073 !important}
+h3{color:#8B0073 !important}
+
+#pagAdministracion
+textarea:focus,
+textarea:hover,
+input[type="text"]:hover, 
+input[type="text"]:focus,
+select:hover,
+select:focus {border: 1px solid #8B0073 !important;}
+
+#pagAdministracion #product-table	th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	background:#8B0073;
+	padding:10px 0;
+	}
+
+#pagAdministracion .submit-login{ background:#8B0073 !important}
+#pagAdministracion #product-table tr:hover {  background:#ECD9FF !important; }
+.pasosActivo {background:#8B0073 !important}
+
+/*------------------------------- pagina oficios --------------------------------*/
+.camposAcciones{border:1px dotted #666666; padding:20px 50px; margin:10px; height:300px; overflow:auto}
+.camposLi{list-style:url(../images/OK20.png); margin:5px; position:relative }
+.camposInputAcciones{}
+.eliminarInput{ display:inline-block; cursor:pointer; position:relative; background:url(../images/cross.png); height:16px; width:16px; left:-25px; z-index:100}

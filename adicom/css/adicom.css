@@ -1,0 +1,18 @@
+#cuadroDialogo{ font-size:12px; 
+	display:none; padding:1px; 
+	background:rgb(184, 22, 22); 
+	position:fixed; top:20%; 
+	left:50%;right:0;margin-left: auto; margin-right: auto; 
+	z-index:1200; -moz-border-radius:5p;
+	-webkit-border-radius: 5px; border-radius: 5px;
+	height: 600px;
+	width: 1000px;
+}
+#cuadroRes{ line-height:normal; 
+    background:rgb(117, 91, 91); 
+    padding:5px;
+    overflow:auto;
+    height: 600px;
+	width: 600px;
+
+}

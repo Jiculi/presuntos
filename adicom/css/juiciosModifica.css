@@ -1,0 +1,489 @@
+.menu { grid-area: cabeza; }
+.info { grid-area: datos; }
+.formita { grid-area: main; }
+.formaRRF { grid-area: mainRRF; }
+.formaAD { grid-area: mainAD; }
+.inicioJN { grid-area: oficios; }
+.firme { grid-area: fin; }
+.piePagina { grid-area: footer; }
+    
+.grid-container {
+        display: grid;
+        grid-template-areas:
+        'cabeza cabeza'
+        'datos main'
+        'datos mainRRF'
+        'datos mainAD'
+        'datos oficios'
+        'datos fin'
+        'footer footer';
+        grid-template-rows: 45px 12em 14em 14em 14.8em 10em 20px;
+        grid-template-columns: 20em 1fr;
+        grid-gap: 2px;
+        padding: 2px;
+}
+    
+.grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+}
+
+
+.juicio-etiqueta { 
+    display:block; 
+    padding:3px; 
+    color:#069; 
+    font-weight: normal;
+    margin:1px; 
+    text-align:right
+}
+
+.juicio-redonda {
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+
+
+
+fieldset { 
+    display: block;
+    color: #069;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px groove (internal value);
+    border-color: rgb(240, 244, 245);
+}
+
+
+
+.navbar {
+   /* overflow: hidden; */
+    background-color: rgb(107, 147, 221);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bottom: 0; */
+    width: 100%;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+  
+.navbar a:hover {
+    background: #c3ebee;
+    color: black;
+}
+  
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+  .navbar-right {
+    float: right;
+  }
+
+  .navbar a.logo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+.titulo { grid-area: t; }
+
+
+
+
+
+
+
+.formita {
+    display: grid;
+    grid-template-areas:
+    't t t t'
+    'a b c d'
+    'comenta x y z';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2em 4em 6em;
+}
+
+.formita titulo {
+    background: rgb(204, 216, 224);
+}
+
+.formita > div {
+    padding: 5px;
+    height: auto;
+}
+  
+.formita h1 {
+    font-size: 18px;
+    background: rgb(153, 211, 250);
+    padding: 0px;
+}
+
+.formita label {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#069; 
+}
+  
+.formita input {
+    border-radius: 5px;
+    font-size: 12px;
+    color: rgb(17, 20, 184);
+    font-weight: bold;
+    border-style: none; 
+    width: 15em; 
+}
+
+.input:focus + label, textarea:focus + label, select:focus + label {
+  color: #933;
+}
+
+.formita select {
+  border-radius: 5px;
+}
+
+.formita fieldset  {
+    grid-column: span 2;
+    width: 100%;
+    border: 0;
+}
+
+.formita fieldset label {
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    color:#069; 
+    font-weight: normal;
+}
+
+.formita fieldset textarea {
+    border-radius: 5px;
+    grid-column: 2 / 4;
+    grid-column: span 2;
+    width: 80%;
+}
+
+.sentenciaPrimera { grid-row-start:  3; }
+
+
+
+
+.formaRRF {
+    display: grid;
+    grid-template-areas:
+    't t t t'
+    'a b c d'
+    'comenta x y z';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2em 4em 7em;
+    grid-gap: 5px;
+}
+
+.formaRRF h1{
+    font-size: 18px;
+    background: rgb(153, 211, 250);
+    padding: 0px;
+}
+
+.formaRRF > div {
+    padding: 5px;
+    height: auto;
+}
+
+.formaRRF label {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  color:#069; 
+}
+
+  
+.formaRRF input {
+    font-size: 12px;
+    color: rgb(17, 20, 184);
+    font-weight: bold;
+    border-style: none; 
+    width: 15em; 
+}
+
+.formaRRF fieldset  {
+  grid-column: span 2;
+  width: 100%;
+  border: 0;
+}
+
+
+.formaRRF fieldset textarea {
+    grid-column: 2 / 4;
+    grid-column: span 2;
+    width: 90%; 
+}
+
+.formaRRF fieldset label {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#069; 
+}
+
+
+
+.formaAD {
+    display: grid;
+    grid-template-areas:
+    't t t t'
+    'a b c d'
+    'comenta x y z';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2em 4em 7em;
+    grid-gap: 5px;
+}
+
+.formaAD h1{
+  font-size: 18px;
+  background: rgb(153, 211, 250);
+  padding: 0px;
+}
+
+.formaAD > div {
+    padding: 5px;
+    height: auto;
+  }
+  
+.formaAD label {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#069; 
+  }
+  
+.formaAD input {
+    font-size: 12px;
+    color: rgb(17, 20, 184);
+    font-weight: bold;
+    border-style: none; 
+    width: 15em; 
+  }
+
+.formaAD fieldset  {
+    grid-column: span 2;
+    width: 100%;
+    border: 0;
+  }
+  
+.formaAD fieldset textarea {
+      grid-column: 2 / 4;
+      grid-column: span 2;
+      width: 90%; 
+  }
+  
+.formaAD fieldset label {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 12px;
+      color:#069; 
+  }
+
+
+  .firme {
+    display: grid;
+    grid-template-areas:
+    't t t t'
+    'a b c d';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2em 8em;
+    grid-gap: 5px;
+}
+
+.firme h1{
+  font-size: 18px;
+  background: rgb(153, 211, 250);
+  padding: 0px;
+}
+
+.firme > div {
+    padding: 5px;
+    height: auto;
+  }
+  
+.firme label {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#069; 
+  }
+  
+.firme input {
+    font-size: 12px;
+    color: rgb(17, 20, 184);
+    font-weight: bold;
+    border-style: none; 
+    width: 15em; 
+  }
+
+.firme fieldset  {
+    grid-column: span 2;
+    width: 100%;
+    border: 0;
+  }
+  
+.firme fieldset textarea {
+      grid-column: 2 / 4;
+      grid-column: span 2;
+      width: 90%; 
+  }
+  
+.firme fieldset label {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 12px;
+      color:#069; 
+  }
+
+
+
+#success {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+}
+
+
+.info {
+  padding: 10px; 
+  background-color:rgb(230, 250, 220); 
+  height: auto;
+
+}
+
+.info label {
+  display: block;
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(84, 84, 87);
+
+}
+
+.info textarea,
+.info input {
+  font-size: 12px;
+  color: rgb(40, 41, 92);
+  font-weight: bold;
+  background-color:rgb(208, 214, 214);
+  border-style: none; 
+  width: 100%; 
+
+}
+
+.contestacion { grid-area: cc; }
+.ampliacion { grid-area: bb; }
+.alegatos { grid-area: dd; }
+.alegatosOficio{
+  grid-area: co;
+  grid-column-start:1;
+  grid-row-start:5
+}
+.alegatosFecha{
+  grid-area: cf;
+  grid-column-start:2;
+  grid-row-start:5
+}
+
+
+.inicioJN {
+  display: grid;
+  grid-template-areas:
+  't t t t'
+  'cc cc bb bb'
+  'ao af bo bf'
+  'dd dd ee ee'
+  'co cf x x';
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2em 1.4em 4em 1.4em 6em;
+  grid-gap: 5px;
+}
+
+.inicioJN titulo {
+  background: rgb(204, 216, 224);
+}
+
+.inicioJN h1{
+  font-size: 18px;
+  background: rgb(153, 211, 250);
+  padding: 0px;
+}
+
+.inicioJN h2{
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0px;
+  border-bottom: 2px solid rgb(91, 175, 231);
+}
+
+.inicioJN > div {
+  padding: 5px;
+  height: auto;
+}
+
+.inicioJN label {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  color:#069; 
+}
+
+.inicioJN input {
+  font-size: 12px;
+  color: rgb(17, 20, 184);
+  font-weight: bold;
+  border-style: none; 
+  width: 15em; 
+}
+
+input:focus { 
+  background-color: rgb(248, 248, 211);
+  border-color: #2196F3;
+  border: 2px solid #2196F3;
+}
+
+
+textarea:focus {
+  background-color: rgb(248, 248, 211);
+  border-color: #2196F3;
+  border: 2px solid #2196F3;
+}
+
+select:focus {
+  background-color: rgb(248, 248, 211);
+  border-color: #2196F3;
+  border: 2px solid #2196F3;
+}
+

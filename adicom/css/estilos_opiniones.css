@@ -1,0 +1,55 @@
+/*------------------------------- pagina volantes --------------------------------*/
+.nomSis{ color:#DF7401 !important}
+h3{color:#DF7401 !important}
+.pasosActivo{ 
+	display:inline-block; 
+	padding:5px 12px;
+	height:25px;  
+	cursor:pointer;
+	line-height:25px; 
+	background:#DF7401 !important;
+	font-weight:bold;  
+	color:#EEE;}
+textarea:focus,textarea:hover,input[type="text"]:hover, input[type="text"]:focus,select:hover,select:focus 
+{border: 1px solid #DF7401 !important;}
+/*#pagVolantes .submit-login{ background:#F0F !important}*/
+#product-table th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	background:#DF7401 !important;
+	padding:10px 0;
+	}
+#product-table th	{
+	text-align: center;
+	/* background:url(../images/table/table_header_options.jpg); */
+	background:#DF7401 !important;
+	padding:10px 0;
+	}
+
+#product-table tr:hover { background:#F5D0A9 !important; }
+.tablaInfo2.etiquetaInfo {border: 1px solid #DF7401 !important; color:#DF7401}
+
+
+
+#product-table tr:hover { background:#F5D0A9 !important; }
+.tablaInfo .etiquetaInfo {border: 1px solid #DF7401 !important; color:#DF7401}
+/* .contVolantes{border: 2px solid #F0F !important;} */
+/* .pasos{ background:#F39 !important} */
+
+#related-act-top	{
+	/*background:url(../images/forms/header_related_act.gif);*/
+	background:#DF7401 !important;
+	width:260px;
+	height:43px;
+	margin:10px auto 0 auto;
+	-moz-border-radius: 8px 8px 0px 0px ;
+    -webkit-border-radius: 8px 8px 0px 0px ;
+    border-radius: 8px 8px 0px 0px ;
+	
+	}
+.pfAccesible{background:#DF7401 !important;}
+/*------------------------------- pagina oficios --------------------------------*/
+.camposAcciones{border:1px dotted #666666; padding:20px 50px; margin:10px; height:300px; overflow:auto}
+.camposLi{list-style:url(../images/OK20.png); margin:5px; position:relative }
+.camposInputAcciones{}
+.eliminarInput{ display:inline-block; cursor:pointer; position:relative; background:url(../images/cross.png); height:16px; width:16px; left:-25px; z-index:100}

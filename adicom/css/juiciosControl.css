@@ -1,0 +1,63 @@
+#fondo {
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 1801;
+    background-color: #588546;
+    opacity: 0.3;
+}
+
+div.dataTables_wrapper {
+    margin-top: 50px;  /* este es el bueno */
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.navbarJuicios {
+    overflow: hidden;
+    background: linear-gradient( #390, #6cda12);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bottom: 0; */
+    width: 100%;
+  }
+  
+  .navbarJuicios a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .navbarJuicios a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbarJuicios a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .navbarJuicios-right {
+    float: right;
+  }
+
+  .navbarJuicios a.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(226, 234, 243);
+  }

@@ -1,0 +1,206 @@
+body, main, h1, h2, h3, div{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%;
+}
+
+
+#mesa {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index:1802;
+  width: 90%;
+  height: auto;
+  margin-left: auto; 
+  margin-right: auto; 
+  line-height : normal; 
+  background:rgb(229, 231, 230); 
+  padding:5px; 
+  overflow : hidden
+}
+
+#tablero {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%;
+
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index:1800;
+    width: 99%;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 0px;
+    line-height : normal; 
+    background : rgb(255, 255, 255); 
+
+    overflow : hidden
+
+  }
+
+  
+.table-wrapper {
+    overflow: auto;
+      max-width: 100%;
+      background:
+          linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+          linear-gradient(to right, rgba(255,255,255,0), white 70%) 0 100%,
+          radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+          radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-position: 0 0, 100%, 0 0, 100%;
+      background-attachment: local, local, scroll, scroll;
+      
+  }
+  
+  .table-wrapper tr {
+    border-bottom: 1px solid;
+  }
+  
+  .table-wrapper  th {
+    background-color: #555;
+    color: #fff;
+    white-space: nowrap;
+  }
+  
+  .table-wrapper  th, .table-wrapper  td {
+    text-align: left;
+    padding: 0.5em 1em;
+  }
+  
+  .numeric {
+    text-align: right;
+  }
+  
+  p, h1, h2, h3 {
+    text-align: left;
+    margin-top: 1em;
+    font-style: italic;
+  }
+
+  .table-wrapper  tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+
+h1	{
+	color: #4b4b4b;
+	font-family: Tahoma;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: normal;
+}
+    
+h2	{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3	{
+	color: #069;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-top: 2em;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #c3c8d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1001;
+  }
+
+  .navbar p {
+    float: left;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .navbar-right {
+    float: right;
+    padding: 0px 16px;
+
+  }
+
+  .navbar a.logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+.navbar { grid-area: menu; }
+.info { grid-area: tabla; }
+.item3 { grid-area: grafica; }
+.item4 { grid-area: datos; }
+.item5 { grid-area: footer; }
+
+.jaula {
+    display: grid;
+    grid-template-areas:
+    'menu menu'
+    'tabla grafica'
+    'datos datos'
+    'footer footer';
+    grid-template-rows: 45px auto auto 45px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
