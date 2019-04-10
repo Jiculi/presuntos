@@ -1,8 +1,11 @@
 //import $ from 'jquery';
 import { mostrarVentana } from "./ventana";
 import style from './css/actores.css';
+import style from './css/fondos.css';
 
 //<link rel="stylesheet" href="../css/actores.css">
+
+
 
 
 
@@ -10,19 +13,46 @@ function mostrarAltaVolante(pagina, titulo) {
     let alto = 660;
     let ancho =1000;
     let top = 10;
+/*
+    var fondo = document.querySelector('#pin');
+
+    var div = document.createElement('div');
+    div.setAttribute("id", "fondoOscuro");
+    //div.innerHTML = 'aqui va el el fondo';
+    fondo.parentNode.insertBefore( div, null);
+
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroDialogo");
+    //div.innerHTML = 'aqui va el el cuadro dialogo';
+    fondo.parentNode.insertBefore( div, null );
+
+    var dialogo = document.querySelector('#cuadroDialogo');
+
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroTitulo");
+    //div.innerHTML = 'aqui va el el titulo';
+    dialogo.appendChild( div);
+
+    var div = document.createElement('div');
+    //div.setAttribute("id", "cuadroRes");
+    div.innerHTML = '<center><img src="adicom/images/load_bar.gif" style="margin:100px 0"></center>';
+    dialogo.appendChild( div);
 
 
-    //this.alto = new Number(alto);
-	//this.ancho = new Number(ancho);
-	//this.titulo = new String(titulo);
-	//this.top = new Number(top);
-	//this.pagina = String(pagina);
-	$('#cuadroRes').html('<center><img src="images/load_bar.gif" style="margin:100px 0"></center>');
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroRes");
+    //div.innerHTML = 'aqui va el el resumen';
+    dialogo.appendChild( div);
+
+
+
+    //<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro()" > <img src="images/cerrar.png" /> </div>
+*/
+	// $('#cuadroRes').html('<center><img src="adicom/images/load_bar.gif" style="margin:100px 0"></center>');
 	document.getElementById('cuadroTitulo').innerHTML = titulo;
     $("#cuadroDialogo").css("height", "600px");
     $("#cuadroDialogo").css("width", "1000px");
-    $("#cuadroDialogo").css("width", "1000px");
-    $("#cuadroRes").css("marginLeft", "20%");
+    $("#cuadroDialogo").css("marginLeft", "10%");
 		
     $("#cuadroDialogo").css("top", "3%");
 			
@@ -31,6 +61,8 @@ function mostrarAltaVolante(pagina, titulo) {
 	
 	$("#cuadroRes").load(pagina);
 }
+
+
 
 $(document).ready(function() {
     $('#juicios').DataTable( {
@@ -141,14 +173,13 @@ $(document).ready(function() {
         var row = table.row( tr );
         e.preventDefault();
 
-        var pagina = 'cont/pfrr_informacion.php?numAccion='+encodeURIComponent(row.data().num_accion)+ '&usuario=fllamas' + '&direccion=DG' + '&nivel=A';
+        var pagina = 'adicom/pfrr_informacion.php?numAccion='+encodeURIComponent(row.data().num_accion)+ '&usuario=fllamas' + '&direccion=DG' + '&nivel=A';
         var titulo = encodeURIComponent(row.data().num_accion) +
                     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  
                      encodeURIComponent(row.data().entidad) + 
                      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
                      row.data().detalle_edo_tramite;
-        // mostrarAltaVolante(pagina, titulo);
-        mostrarVentana(pagina);
+        mostrarAltaVolante(pagina, titulo);
     } );
     
 

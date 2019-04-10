@@ -5,18 +5,29 @@ function mostrarAltaVolante(pagina, titulo) {
     let ancho =1000;
     let top = 10;
 
-    var pin = document.querySelector('#pin');
+    var fondo = document.querySelector('#pin');
+
     var div = document.createElement('div');
-    div.setAttribute("id", "fondoOscuroX");
-    div.innerHTML = 'aqi va el el fondo';
-    pin.parentNode.insertBefore( div, pin.nextSibling );
+    div.setAttribute("id", "fondoOscuro");
+    div.innerHTML = 'aqui va el el fondo';
+    fondo.parentNode.insertBefore( div, null);
 
-    var fondo = document.querySelector('#fondoOscuroX');
-    var div1 = document.createElement('div');
-    div1.setAttribute("id", "cuadroDialogoX");
-    div1.innerHTML = 'aqi va el el cuadro';
-    fondo.parentNode.insertBefore( div1, fondo.nextSibling );
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroDialogo");
+    div.innerHTML = 'aqui va el el cuadro dialogo';
+    fondo.parentNode.insertBefore( div, null );
 
+    var dialogo = document.querySelector('#cuadroDialogo');
+
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroTitulo");
+    div.innerHTML = 'aqui va el el titulo';
+    dialogo.appendChild( div);
+
+    var div = document.createElement('div');
+    div.setAttribute("id", "cuadroRes");
+    div.innerHTML = 'aqui va el el resumen';
+    dialogo.appendChild( div);
 
 
 
@@ -30,12 +41,11 @@ function mostrarAltaVolante(pagina, titulo) {
 	//this.top = new Number(top);
 	//this.pagina = String(pagina);
 	$('#cuadroRes').html('<center><img src="images/load_bar.gif" style="margin:100px 0"></center>');
-	//document.getElementById('cuadroTitulo').innerHTML = titulo;
+	document.getElementById('cuadroTitulo').innerHTML = titulo;
     $("#cuadroDialogo").css("height", "600px");
     $("#cuadroDialogo").css("width", "1000px");
-    $("#cuadroDialogo").css("width", "1000px");
     $("#cuadroDialogo").css("marginLeft", "10%");
-    $("#cuadroRes").css("marginLeft", "20%");
+    //$("#cuadroRes").css("marginLeft", "20%");
 		
     $("#cuadroDialogo").css("top", "3%");
 			

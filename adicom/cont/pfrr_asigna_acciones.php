@@ -6,6 +6,8 @@ $conexion->conectar();
 //-------------------------- DESINFECTAR VARIABLES -----------------------------
 //------------------------------------------------------------------------------
 
+error_reporting(E_ERROR);
+
 $accion = $_REQUEST['accion'];
 $direccion = $_REQUEST['direccion'];
 $usuario = $_REQUEST['usuario'];

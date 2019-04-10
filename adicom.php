@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    include("adicom/includes/configuracion.php");
     include("./adicom/includes/funciones.php");
 ?> 
 <!DOCTYPE html>
@@ -11,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de Juicios Contenciosos Administrativos</title>
 
-     <!-- <link rel="stylesheet" href="./adicom.css">  -->
+      <link rel="stylesheet" href="./adicom.css">  
+     <!--  <link rel="stylesheet" href="adicom/css/estilo.css" type="text/css" media="screen" title="default" />  -->
 
-       <link rel="stylesheet" href="adicom/css/estilo.css" type="text/css" media="screen" title="default" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -35,10 +34,12 @@
 
 <body>
 <?php 
-	echo cuadroYfondo(); 
-	echo cuadroYfondo2();
-	echo cuadroYfondo3();
+//	echo cuadroYfondo(); 
+//	echo cuadroYfondo2();
+//	echo cuadroYfondo3();
 ?>
+
+
 <!-- ----------------------------------------- ----------------------------------------------->
 <!-- ---------------------------- IMPORTANTE NO QUITAR --------------------------------------->
 <!-- --------------------- VARIABLES QUE PASAN VALORES A JQUERY ------------------------------>

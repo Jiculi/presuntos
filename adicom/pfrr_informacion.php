@@ -170,7 +170,7 @@
 	$tamNiv = strlen($_REQUEST['nivel']);
 
 	if($_REQUEST['direccion'] == "DG" || $_REQUEST['nivel'] == "S" || $tamNiv == 5 || $tamNiv == 3 || $tamNiv == 1) {?>
-	<a href="#" title="Asignar Acción" class="" onclick=" new mostrarCuadro2(250,800,'Asignar Acción <?php echo $_REQUEST['numAccion'] ?>',100,'cont/pfrr_asigna_acciones.php','accion=<?php echo $_REQUEST['numAccion'] ?>&direccion=<?php echo $_REQUEST['direccion'] ?>&usuario=<?php echo $_REQUEST['usuario'] ?>&nivel=<?php echo $_REQUEST['nivel'] ?>') "> <img src="adicom/images/User-Files-iconAcc.png"> Reasignar Accion </a>
+	<a href="#" title="Asignar Acción" class="" onclick=" new mostrarCuadro2(250,800,'Asignar Acción <?php echo $_REQUEST['numAccion'] ?>',100,'adicom/cont/pfrr_asigna_acciones.php','accion=<?php echo $_REQUEST['numAccion'] ?>&direccion=<?php echo $_REQUEST['direccion'] ?>&usuario=<?php echo $_REQUEST['usuario'] ?>&nivel=<?php echo $_REQUEST['nivel'] ?>') "> <img src="adicom/images/User-Files-iconAcc.png"> Reasignar Accion </a>
 <?php } 
 ?>
 <!-- FLL 
@@ -179,7 +179,13 @@
 
 
 
-<link href="adicom/css/estilos_pfrr.css" rel="stylesheet" type="text/css" />
+ <link href="adicom/css/adicom.css" rel="stylesheet" type="text/css" />  <!-- FLL -->
+ <script type="text/javascript" src="adicom/js/funciones.js"></script>  <!-- FLL -->
+
+
+
+
+<!--FLL no se usa <link href="adicom/css/estilos_pfrr.css" rel="stylesheet" type="text/css" />  -->
 <table align="center" class='tablaInfo' width="100%">
 
           <tr>

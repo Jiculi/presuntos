@@ -1,0 +1,85 @@
+body	{
+	/* background: #fff; */
+	background:#FFF;
+	color: #393939;
+	font-family: Arial;
+	/* FLL font-size: 0px; */
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+
+h2	{
+	color: #393939;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 10px;
+	}
+
+/* ---------- buscar acciones ------------------------------- */
+/*----- cuadro de dialogo y fondo oscuro --*/
+#fondoOscuro{
+	position:fixed;
+	display:none;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:100%;
+	background-color:#000000;	
+	filter: alpha(opacity=70);opacity: .7;
+	z-index:1150;}
+
+#cuadroDialogo{ 
+	font-size:12px;  
+	padding:1px; 
+	background:#F5F5F5; 
+	position:fixed; 
+	/* top:20%; */
+	left: 0;  
+	
+	right:0;
+	margin-left: 0; 
+
+	margin-right: auto;
+	z-index:1200; 
+	-moz-border-radius:5p;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;}
+
+#cuadroTitulo{ 
+	background:#333; 
+	padding:10px; 
+	color:#CCC; 
+	font-weight:bold; 
+	-moz-border-radius:5p;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;}
+
+#cuadroRes{ line-height:normal !important; 
+	background:#EEE; 
+	padding:5px;
+	overflow:auto;}
+
+.etiquetaInfo{ display:block; padding:3px; border:1px solid #069; color:#069; margin:1px; font-weight:bold; text-align:right}
+.redonda3{border-radius: 3px;-ms-border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;-khtml-border-radius: 3px;}
+.redonda5{border-radius: 5px;-ms-border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px;}
+.txtInfo{ display:block; padding:3px; margin:1px; font-weight:bold; text-align:justify}
+
+.submit_line	{
+	/*background: url(../images/login/submit_login.gif) no-repeat;*/
+	background:#333;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	padding:5px 10px;
+	color:#FFF;
+	font-weight:bold;
+	}
+
+	.etiquetaInfo2{ display:block; padding:3px;border:1px solid #069; color:#069; margin:1px;  font-weight:bold; text-align:center}
+

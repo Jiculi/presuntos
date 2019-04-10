@@ -10,15 +10,18 @@ h3{color:#390 !important}
 	background:#390 !important;
 	font-weight:bold;  
 	color:#EEE;}
+
 textarea:focus,textarea:hover,input[type="text"]:hover, input[type="text"]:focus,select:hover,select:focus 
 {border: 1px solid #390 !important;}
 /*#pagVolantes .submit-login{ background:#F0F !important}*/
+
 #product-table th	{
 	text-align: center;
 	/* background:url(../images/table/table_header_options.jpg); */
 	background:#390 !important;
 	padding:10px 0;
 	}
+	
 #product-table th	{
 	text-align: center;
 	/* background:url(../images/table/table_header_options.jpg); */

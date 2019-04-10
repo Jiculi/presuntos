@@ -10,6 +10,8 @@
     <title>Lista de Juicios Contenciosos Administrativos</title>
 
  <!--   <link rel="stylesheet" href="../css/actores.css">  -->
+  <!--   <link rel="stylesheet" href="../css/fondos.css">  -->
+
     <link rel="stylesheet" href="../js/datatables/dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.4/css/buttons.dataTables.min.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -22,10 +24,33 @@
 		    $("#listajuicios").fadeOut();
 		    $('#popup-overlay').fadeOut('slow');
         }
+
+        function cerrarCuadro()  {
+            $("#fondoOscuro").fadeOut();
+            $("#cuadroDialogo").fadeOut();
+        }
     </script>  
 </head>
 
 <body>
+    <div id="pin"></div>
+
+    <div id="fondoOscuro"></div>
+	<div id="cuadroDialogo" >
+		<div id="cuadroTitulo"> </div>
+		<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro()" > <img src="images/cerrar.png" /> </div>
+		<div id="cuadroRes"></div>
+		<div id="cuadroMen"></div>
+    </div>
+
+    <div id="fondoOscuro2"></div>
+	<div id="cuadroDialogo2" >
+		<div id="cuadroTitulo2"> </div>
+		<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro2()" > <img src="images/cerrar.png" /> </div>
+		<div id="cuadroRes2"></div>
+		<div id="cuadroMen2"></div>
+	</div>
+    
     <div id='altaOficio' style="display: none;"></div>
 <!--    <div id="popup-overlay"></div>  -->
     <div id="ventana-overlay"></div>
