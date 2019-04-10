@@ -12,9 +12,8 @@
 ?>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<body>
-	<p> comentario 1 </p>
-</body>
+
+
 <script>
 
 		jQuery(function() {

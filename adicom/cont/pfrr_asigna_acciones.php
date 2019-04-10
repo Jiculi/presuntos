@@ -6,7 +6,7 @@ $conexion->conectar();
 //-------------------------- DESINFECTAR VARIABLES -----------------------------
 //------------------------------------------------------------------------------
 
-error_reporting(E_ERROR);
+error_reporting(E_ERROR);  // FLL 
 
 $accion = $_REQUEST['accion'];
 $direccion = $_REQUEST['direccion'];
