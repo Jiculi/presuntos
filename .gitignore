@@ -1,4 +1,7 @@
 /node_modules
 .DS_Store
+<<<<<<< HEAD
 /php/database.php
 /adicom/includes/clases.php
+=======
+>>>>>>> refs/remotes/origin/adi01

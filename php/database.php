@@ -5,7 +5,11 @@ class Database
     private static $dbName = 'dgr' ;
     private static $dbHost = 'localhost' ;
     private static $dbUsername = 'root';
+<<<<<<< HEAD
     private static $dbUserPassword = 'root';
+=======
+    private static $dbUserPassword = '';
+>>>>>>> refs/remotes/origin/adi01
      
     private static $cont  = null;
      
