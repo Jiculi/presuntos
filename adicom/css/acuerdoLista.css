@@ -1,0 +1,116 @@
+/* datatables */
+tfoot input {
+    width: 100%;
+    padding: 3px !important ;
+    box-sizing: border-box;
+}
+
+div.dataTables_wrapper {
+    margin-top: 50px;  /* este es el bueno */
+   /* scroll x 
+    width: 800px;  
+    margin: 0 auto;
+    */ 
+}
+
+div.dataTables_wrapper .dataTables_info {
+  font-size: 12px;
+  color: rgb(55, 139, 207);
+
+  font-weight: bold;
+}
+
+div.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+  width: 200px;
+}
+
+/* table.dataTable td.dataTables_empty { */
+
+#popup-overlay {
+    display:none;
+    position: fixed;
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#lista { 
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    z-index:1100;
+    width: 98%;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height : normal; 
+    background:rgb(229, 231, 230); 
+    padding: 1em; 
+    overflow : hidden
+}
+
+/* necesario para todos */
+#altaOficio { 
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index:1180;
+    width: 80%;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height : normal; 
+    background:rgb(217, 238, 237); 
+    padding:5px; 
+    overflow : hidden
+}
+
+
+
+
+.navbarJuicios {
+    overflow: hidden;
+    background-color: rgb(55, 139, 207);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bottom: 0; */
+    width: 100%;
+  }
+  
+  .navbarJuicios a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .navbarJuicios a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbarJuicios a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .navbarJuicios-right {
+    float: right;
+  }
+
+  .navbarJuicios a.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(226, 234, 243);
+  }

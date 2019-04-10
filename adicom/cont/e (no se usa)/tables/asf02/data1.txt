@@ -1,0 +1,9 @@
+{"data":[ 
+    [
+    "DGR\/C\/01\/2011\/R\/06\/005",
+    "(XINFE)Gutsa Infraestructura, S.A. de C.V. (Condempsa de M\u00e9xico, S.A. de C.V.)",
+    "8\/27\/2014"
+    ]
+  ]
+}
+ 

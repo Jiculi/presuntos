@@ -1,0 +1,68 @@
+== lista to do ==
+
+Mysql
+=====
+1 Empatar oficios
+2 Empatar volantes
+3 Empatar juicios
+
+lista de juicios
+----------------
+2 formato numero
+3 barra, boton salir y apagar fondo (listas)
+4 quitar filtos en ciertas columnas (listas)
+5 botones de excel y pdf (listas)
+> 1 iconos
+
+
+Lista de oficios
+----------------
+1 subir archivo
+2 pdf 
+
+
+Lista Volantes
+--------------
+1 iconos
+
+Alta Juicio
+-----------
+1 quitar depto
+2 input Monto
+3. boton de cerrar, barra
+4 Jalar a los presuntos
+
+
+Alta volante
+1 campos requeridos
+2 conectar referencia 
+3 css fondos
+4 css campos
+5 fechas jQuery
+6 ->  responsable subdirector
+7 jquery hide/show folio fecha Hora
+8 leer sentido de la sentencia
+
+
+
+Alta oficio
+-----------
+2 barra
+3 solicita solo subdirectores
+4 alinear etiquetas
+ok 1 homogenizar referencia
+
+
+seguimiento juicios
+-------------------
+1 ordenar campos
+2 Marcar Estado (importante)
+
+
+ADICOM
+======
+1 html 5
+2 version javascript
+3 version query
+
+

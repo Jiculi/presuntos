@@ -1,0 +1,23 @@
+/*------------------------------- pagina directores --------------------------------*/
+
+a{ color:#036}
+a:hover{ color:#036}
+/* --------------------------------------------------------------------- */
+.iconos{ float:left; padding:10px; width:150px; text-align:center }
+.iconos:hover span{ color:#FFF}
+.iconos img{ display:block; margin:0 auto}
+.iconos span{ display:block; padding:5px 3px; font-weight:bold; line-height:17px}
+/* -------------------------------- azules ----------------------------- */
+.iconAzul:hover
+{ 
+	background:#64B1FF;
+	z-index:border-radius: 5px;-ms-border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px; 
+}
+.iconVerde:hover
+{ 
+	background:#093;
+	z-index:border-radius: 5px;-ms-border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px; 
+}
+
+#divReporte{ width:990px; height:480px}
+
