@@ -5,6 +5,24 @@ function mostrarAltaVolante(pagina, titulo) {
     let ancho =1000;
     let top = 10;
 
+    var pin = document.querySelector('#pin');
+    var div = document.createElement('div');
+    div.setAttribute("id", "fondoOscuroX");
+    div.innerHTML = 'aqi va el el fondo';
+    pin.parentNode.insertBefore( div, pin.nextSibling );
+
+    var fondo = document.querySelector('#fondoOscuroX');
+    var div1 = document.createElement('div');
+    div1.setAttribute("id", "cuadroDialogoX");
+    div1.innerHTML = 'aqi va el el cuadro';
+    fondo.parentNode.insertBefore( div1, fondo.nextSibling );
+
+
+
+
+
+
+
 
     //this.alto = new Number(alto);
 	//this.ancho = new Number(ancho);

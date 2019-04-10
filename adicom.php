@@ -1,11 +1,7 @@
 <?php 
     session_start();
-<<<<<<< HEAD
-=======
     include("adicom/includes/configuracion.php");
     include("./adicom/includes/funciones.php");
-
->>>>>>> refs/remotes/origin/adi01
 ?> 
 <!DOCTYPE html>
 <html lang="es">  
@@ -15,18 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de Juicios Contenciosos Administrativos</title>
 
-<<<<<<< HEAD
-    <link rel="stylesheet" href="adicom/css/adicom.css">  -->
-
-    <!--     <link rel="stylesheet" href="adicom/css/estilo.css" type="text/css" media="screen" title="default" />
-
-  <link rel="stylesheet" href="../css/actores.css">  -->
-    <link rel="stylesheet" href="../js/datatables/dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.4/css/buttons.dataTables.min.css"/>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-=======
      <!-- <link rel="stylesheet" href="./adicom.css">  -->
 
        <link rel="stylesheet" href="adicom/css/estilo.css" type="text/css" media="screen" title="default" />
@@ -38,28 +22,18 @@
     <script type="text/javascript" src="adicom/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="adicom/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script> 
 
->>>>>>> refs/remotes/origin/adi01
 
 
     <script>
         function informacion() {
-<<<<<<< HEAD
-            var pagina = 'adicom/_pfrr_informacion.php?numAccion=03-00622-2-143-03-005&usuario=fllamas&direccion=DG&nivel=A';
-alert("antes");
-            $("#cuadroRes").load(pagina);
-            alert("despues");
-=======
             var pagina = 'adicom/pfrr_informacion.php?numAccion=03-00622-2-143-03-005&usuario=fllamas&direccion=DG&nivel=A';
             jQuery("#cuadroRes").load(pagina);
->>>>>>> refs/remotes/origin/adi01
 
         }
     </script>  
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
 <?php 
 	echo cuadroYfondo(); 
 	echo cuadroYfondo2();
@@ -76,7 +50,6 @@ alert("antes");
 <!-- ----------------------------------------- ----------------------------------------------->
 <!-- ----------------------------------------- ----------------------------------------------->
 <!-- ----------------------------------------- ----------------------------------------------->
->>>>>>> refs/remotes/origin/adi01
     <div id='altaOficio' style="display: none;"></div>
 <!--    <div id="popup-overlay"></div>  -->
     <div id="ventana-overlay"></div>
@@ -86,42 +59,14 @@ alert("antes");
             <a href="#" class="logo">Actores</a>
 		    <div class="navbarJuicios-right">
                 <a href="javascript:informacion()">Info</a>
-<<<<<<< HEAD
-                 <a href="/recupera/index.php">Cerrar</a> 
-=======
->>>>>>> refs/remotes/origin/adi01
             </div>
         </div>
         
     </div>
 
-<<<<<<< HEAD
-    <div id="fondoOscuro"></div>
-	<div id="cuadroDialogo" > cuadro de dialogo
-		<div id="cuadroTitulo"> </div>
-		<div style="position: absolute; top:6px; right:6px; cursor:pointer"  onClick="cerrarCuadro()" > <img src="adicom/images/cerrar.png" /> </div>
-		<div id="cuadroRes">hola</div>
-		<div id="cuadroMen">que pasa</div>
-	</div>
-    
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script> 
-
-    <script type="text/javascript" src="../js/jquery.dataTables.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.html5.min.js"></script>
-    <script type="text/javascript" src="../js/sweetalert2.all.min.js"></script>
-
-    <script src='../js/pdfmake.min.js'></script>
- 	<script src='../js/vfs_fonts.js'></script>
-
-    <script src="src/adicom.js"></script>
-=======
     <div id="Titulo">
     </div>
-<div>
+    <div id="pin"></div>
     <p>que pasa</p>
         <button id="juicios">vamos</button>
     </div>
@@ -140,7 +85,6 @@ alert("antes");
 
     <script src="./adicom.js"></script>
 
->>>>>>> refs/remotes/origin/adi01
 
 
 </body>
